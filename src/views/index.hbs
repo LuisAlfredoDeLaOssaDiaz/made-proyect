@@ -1,0 +1,208 @@
+{{#each success}}
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <path d="M0 0h24v24H0z" fill="none"></path>
+    <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"></path>
+    {{text}}
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="alert"
+      aria-label="Close"
+    ></button>
+  </div>
+{{/each}}
+
+<div>
+  <div id="div-img" class="jumbotron mt-4">
+    {{! <h1 class="display-4">Notes App Nodejs and Mongodb</h1>
+        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <hr class="my-4">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam laborum voluptate quibusdam sapiente,
+        inventore repellendus suscipit animi ex. Sapiente, totam. Maxime, ipsa laboriosam sequi quidem inventore perferendis
+        neque. Necessitatibus.</p>
+        <a href="/about" class="btn btn-primary btn-lg">ABOUT</a> }}
+
+    {{!-- <img src="http://localhost:3000/img/png/tuvotacion.png" /> --}}
+  </div>
+  <div id="div-mid">
+    <div id="div-top">
+      <div id="main-card" class="card text-center">
+        <img
+          id="img-content-qpmv"
+          src="/src/imagenes/quienes_somos.png"
+          style="width: 100%; height: 100px"
+        />
+        <div id="card-body-q" class="card-body">
+          <h5 class="card-title" style="color: black;">¿Quienes somos?</h5>
+          {{!  }}
+          <p>
+            <a
+              class="btn btn-primary"
+              data-bs-toggle="collapse"
+              href="#multiCollapseExample1"
+              role="button"
+              aria-expanded="false"
+              aria-controls="multiCollapseExample1"
+            >Ver...</a>
+
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body">
+                  Somos una empresa de servicio con ánimo de lucro que busca
+                  suplir las necesidades de los estudiantes a la educación
+                  superior, buscando mejorar su competencia en la orientación a
+                  sus empleados. De esta manera la empresa logra satisfacer las
+                  necesidades mas urgentes de la secundaria en el que se
+                  trasladan con mayor frecuencia un gran números de estudiantes
+                  que cumplen los requisitos y pruebas para estar en la
+                  educación superior. Esta pequeña empresa tiene como
+                  característica orientar a los estudiantes a escoger su carrera
+                  universitaria que permita a los estudiantes enfocarse en la
+                  carrera de mayor continuidad, satisfacción, expectativa y
+                  responsabilidad a sus intereses. Esta empresa que abarca un
+                  número de empleados considerable, por ser pequeña contiene
+                  entre 11 y 50 trabajadores que determinan la misión de la
+                  empresa para llevar a cabo sus funciones delegadas por
+                  superiores en el cumplimiento de las metas al interior de
+                  esta. El logo de la empresa “tu vocación” encuentra tu
+                  verdadera pasión representa una idea innovadora y emprendedora
+                  para ilustrar a través de esta imagen lo que el estudiante
+                  puede alcanzar y lograr suficiente para abordar una
+                  comunicación con el cliente que esta en la expectativa de
+                  saber, de conocer etc. Como empresa privada buscamos obtener
+                  beneficios económicos con la actividad desempeñado/a generando
+                  liquidez en la que se puedan mantener los recursos propios
+                  para prestar un mejor servicio y de calidad y también con
+                  recursos ajenos que se hayan financiado para poder cubrirlo en
+                  tiempo determinado
+                </div>
+              </div>
+            </div>
+          </div>
+          {{!  }}
+        </div>
+      </div>
+
+      <div id="main-card" class="card text-center">
+        <img
+          id="img-content-qpmv"
+          src="http://localhost:3000/img/png/porque_estudiar.png"
+          style="width: 100%; height: 100px"
+        />
+        <div id="card-body-p" class="card-body">
+          <h5 class="card-title" style="color: black;">¿Porque estudiar una
+            carrera universitaria?</h5>
+          {{!  }}
+          <p>
+            <a
+              class="btn btn-primary"
+              data-bs-toggle="collapse"
+              href="#porqueestudiar"
+              role="button"
+              aria-expanded="false"
+              aria-controls="porqueestudiar"
+            >Ver...</a>
+
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="porqueestudiar">
+                <div class="card card-body">
+                  Estudiar una carrera no solo te permite adquirir nuevos
+                  conocimientos y habilidades, sino que también te ayuda a
+                  explorar tu potencial y ampliar tus horizontes, tanto
+                  personales como profesionales. También hay que tener en cuenta
+                  que una carrera profesional es un reconocimiento esfuerzo
+                  académico mediante un incentivo económico el cual tiene como
+                  objetivos, como: -Procurar la superación de
+                  los profesionales con el fin de ofrecer un mejor servicio
+                  -Retener a los profesionales mejor calificados en cada área de
+                  actividad».
+                </div>
+              </div>
+            </div>
+          </div>
+          {{!  }}
+        </div>
+      </div>
+
+      <div id="main-card" class="card text-center">
+        <img
+          id="img-content-qpmv"
+          src="http://localhost:3000/img/png/mision.png"
+          style="width: 100%; height: 100px"
+        />
+        <div id="card-body-m" class="card-body">
+          <h5 class="card-title" style="color: black;">Mision</h5>
+          {{!  }}
+          <p>
+            <a
+              class="btn btn-primary"
+              data-bs-toggle="collapse"
+              href="#mision"
+              role="button"
+              aria-expanded="false"
+              aria-controls="mision"
+            >Ver...</a>
+
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="mision">
+                <div class="card card-body">
+                  Lograr que los estudiantes que ingresen a nuestra página web
+                  tenga acceso a un servicio de calidad, accesible para acercar
+                  cada día más a las personas. Elevar continuamente el nivel de
+                  la experiencia del usuario mediante el uso de la aplicación
+                  para ayudar a los consumidores a descubrir su verdadera
+                  vocacion.
+                </div>
+              </div>
+            </div>
+          </div>
+          {{!  }}
+        </div>
+      </div>
+    </div>
+
+    <div id="div-button">
+      <div class="card text-center">
+        <div id="card-body-m" class="card-body">
+          <h5 class="card-title" style="color: black;">Vision</h5>
+          {{!  }}
+          <p>
+            <a
+              class="btn btn-primary"
+              data-bs-toggle="collapse"
+              href="#vision"
+              role="button"
+              aria-expanded="false"
+              aria-controls="vision"
+            >Ver...</a>
+
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="vision">
+                <div class="card card-body">
+                  Nuestra empresa es una herramienta tecnológica que busca
+                  brindar ayuda y asesoría a estudiantes de grado 11 de 16 y 17
+                  años y bachilleres jóvenes de los 18 años hasta los 28 años de
+                  edad. Nuestra aplicación estará disponible para todos los
+                  estudiantes de colegios públicos del distrito y colegios
+                  privados de la ciudad de cartagena y el departamento de
+                  bolivar. Que para el 2030 nos proponemos expandir nuestra
+                  herramienta a nivel nacional.
+                </div>
+              </div>
+            </div>
+          </div>
+          {{!  }}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
