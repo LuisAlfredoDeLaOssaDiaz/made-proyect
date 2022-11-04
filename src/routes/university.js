@@ -32,17 +32,15 @@ router.get('/stady/university/:ciudad', async (req, res) => {
 });
 /*==================================================================================================*/
 
-router.get('/stady/universityadd', (req, res) => {
+router.get('/stady/universityadd', isAuthenticated, (req, res) => {
     res.render('universitys/new-university');
 });
 
 
-router.post('/stady/new-university', async (req, res) => {
+router.post('/stady/new-university', isAuthenticated, async (req, res) => {
     console.log('new-university')
     const {nombre, ciudad, contenido, arrayCarreras, link} = req.body;
-    console.log(arrayCarreras);
     const carreras = arrayCarreras.split(',');
-    console.log(carreras);
 
     const errors = [];
 

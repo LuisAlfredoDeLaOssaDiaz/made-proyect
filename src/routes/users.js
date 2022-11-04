@@ -75,7 +75,7 @@ router.get('/users/signin', (req, res) => {
 
 router.post('/users/signin', passport.authenticate('local', {
 
-    successRedirect: '/notes',
+    successRedirect: '/stady/university',
     failureRedirect: '/users/signin',
     failureFlash: true
 })
