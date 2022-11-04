@@ -1,0 +1,78 @@
+
+<form style="display: flex;" action="/stady/university" method="POST">
+  <select
+    name="ciudad"
+    class="form-select"
+    aria-label="Default select example"
+    style="width: 20%; margin: 0 auto"
+  >
+<div class="form-groub">
+    <option selected>Open this select menu</option>
+    <div class="form-groub">
+        <option value="barranquilla" name="ciudad">barranquilla</option>
+    </div>
+    <div class="form-groub">
+        <option value="bogota" name="ciudad">bogota</option>
+    </div>
+    <div class="form-groub">
+        <option value="cali" name="ciudad">cali</option>
+    </div>
+    <div class="form-groub">
+        <option value="cartagena" name="ciudad">cartagena</option>
+    </div>
+    <div class="form-groub">
+        <option value="medellin" name="ciudad">medellin</option>
+    </div>
+    <div class="form-groub">
+        <option value="monteria" name="ciudad">monteria</option>
+    </div>
+  </select>
+  </div>
+
+  <button class="btn btn-success btn-block btn-sm" type="submit">BUSCAR</button>
+</form>
+
+<div class="row">
+  {{#each university}}
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h4
+            class="card-title d-flex justify-content-between align-items-center"
+          >
+          {{!-- {{#each carreras}} --}}
+          {{!-- {{/each}} --}}
+            <a href="/notes/edit/{{_id}}" class="fas fa-edit"></a>
+          </h4>
+          {{#each carreras}}
+            {{ [0] }}
+            <br>
+          {{/each}}
+          <hr />
+          <p>{{description}}</p>
+          <form action="/notes/delete/{{_id}}?_method=DELETE" method="post">
+            <input type="hidden" name="_mehtos" value="DELETE" />
+
+            <button
+              class="btn btn-danger btn-block btn-sm"
+              type="submit"
+            >Delete</button>
+
+          </form>
+        </div>
+      </div>
+      <br />
+    </div>
+  {{else}}
+    <div class="col-md-3 mx-auto">
+      <div class="card">
+        <div class="card-body mx-auto">
+          <p class="lead">There are not notes yet.</p>
+          <hr />
+          <center><a href="/stady/universityadd" class="btn btn-success btn-block">Create
+              One!</a></center>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>

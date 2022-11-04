@@ -52,8 +52,10 @@ app.use ((req,res,next) => {
 // Routes
 
 app.use(require('./routes/index'));
-app.use(require('./routes/notes'));
+// app.use(require('./routes/notes'));
 app.use(require('./routes/users'));
+app.use(require('./routes/university'));
+
 
 // Static Files
 
@@ -65,3 +67,4 @@ app.listen(app.get('port'), _ => {
     console.log('Server on port: ' + app.get('port'));
 
 });
+

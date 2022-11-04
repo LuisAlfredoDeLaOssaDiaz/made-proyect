@@ -24,6 +24,10 @@
     border-radius: 4px;
     padding:7% 4% 7% 4%;
     background-color: rgb(9, 51, 90);
+    background-image: url("../img/png/background-mid.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 #div-top {
@@ -51,4 +55,26 @@
     margin: 0px auto;
     color: aliceblue;
     font-size:10px;
+}
+
+#div-section-3 {
+    /* background-color: red; */
+    /* height: 100px; */
+
+    border-radius: 4px;
+    padding:7% 4% 7% 4%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#main-card {
+    background-color: rgb(255, 234, 196);
+}
+
+#div-about {
+    width: 70%;
+    margin: 10% auto;
+    text-align: center;
+    
 }

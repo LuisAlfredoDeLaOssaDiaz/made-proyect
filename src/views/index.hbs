@@ -22,14 +22,14 @@
         neque. Necessitatibus.</p>
         <a href="/about" class="btn btn-primary btn-lg">ABOUT</a> }}
 
-    {{!-- <img src="http://localhost:3000/img/png/tuvotacion.png" /> --}}
+    {{! <img src="http://localhost:3000/img/png/tuvotacion.png" /> }}
   </div>
   <div id="div-mid">
     <div id="div-top">
       <div id="main-card" class="card text-center">
         <img
           id="img-content-qpmv"
-          src="/src/imagenes/quienes_somos.png"
+          src="http://localhost:3000/img/png/quienes_somos.png"
           style="width: 100%; height: 100px"
         />
         <div id="card-body-q" class="card-body">
@@ -204,5 +204,49 @@
       </div>
     </div>
 
+  </div>
+{{!-- *********************************************************************************************** --}}
+  <div id="div-section-3">
+    <div id="div-top">
+
+      <div id="main-card" class="card text-center">
+        <img id="img-content-qpmv" src="http://localhost:3000/img/png/veru.png" style="width: 100%; height: 100px"/>
+          <form action="/stady/university" method="GET">
+            <div id="card-body-p" class="card-body">
+              <h2 class="card-title" style="color: black;">Sabes que estudiar</h2>
+              <br>
+              <hr>
+              <h6>Visualiza nuestras universidades aliadas.</h6>
+              {{!  }}
+
+                <div class="form-group">
+                  <button class="btn btn-primary btn-block" type="submit">
+                    Ver Universidades
+                  </button>
+                </div>
+              {{!  }}
+            </div>
+          </form>
+      </div>
+
+      <div id="main-card" class="card text-center">
+        <img id="img-content-sabes" src="http://localhost:3000/img/png/no_sabes.png" style="width: 100%; height: 100px" />
+        <form action="/stady/university" method="GET">
+          <div id="card-body-m" class="card-body">
+            <h2 class="card-title" style="color: black;">¿Aun no sabes que estudiar?</h2>
+            <hr>
+            <h6>Resuelve nuestra encuesta de orientacino vocacional.</h6>
+            {{!  }}
+            <div class="form-group">
+              <button class="btn btn-primary btn-block" type="submit">
+                Realizar test
+              </button>
+            </div>
+            {{!  }}
+          </div>
+        </form>
+      </div>
+
+    </div>
   </div>
 </div>
