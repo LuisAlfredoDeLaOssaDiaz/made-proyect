@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+// curso-mdb
 mongoose.connect('mongodb://localhost/curso-mdb', {
     /*
     useCreateIndex: true,

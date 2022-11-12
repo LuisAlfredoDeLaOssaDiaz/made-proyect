@@ -23,8 +23,8 @@
 #div-mid {
     border-radius: 4px;
     padding:7% 4% 7% 4%;
-    background-color: rgb(9, 51, 90);
-    background-image: url("../img/png/background-mid.png");
+    background-color: rgb(21, 25, 112);
+    /* background-image: url("../img/png/background-mid.png"); */
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
