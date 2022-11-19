@@ -55,6 +55,7 @@ app.use(require('./routes/index'));
 // app.use(require('./routes/notes'));
 app.use(require('./routes/users'));
 app.use(require('./routes/university'));
+app.use(require('./routes/client'));
 
 
 // Static Files

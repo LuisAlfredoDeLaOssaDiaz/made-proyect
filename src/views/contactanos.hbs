@@ -1,0 +1,47 @@
+{{#each errors}}
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z" />
+    </svg>
+    {{text}}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{{/each}}
+
+<div class="col-md-4 mx-auto">
+    <div class="card">
+        <div class="card-header">
+            <h3>Contactanos</h3>
+        </div>
+
+        <div class="card-body">
+            <form action="/contactanos" method="POST">
+                <div class="form-groub">
+                    <strong> Nombre Completo: </strong>
+                    <input type="text" name="name" class="form-control" placeholder="Full Name"  autofocus />
+                </div>
+                <div class="form-groub">
+                    <strong> Email: </strong>
+                    <input type="text" name="email" class="form-control" placeholder="Email" />
+                </div>
+                <div class="form-group">
+                    <strong> Telefono: </strong>
+                    <input type="number" name="telefono" class="form-control" placeholder="Telefono" />
+                </div>
+                <div class="form-group">
+                    <strong> Breve descripcion: </strong>
+                    <textarea name="description" class="form-control" placeholder="Descripcion" ></textarea>
+                </div>
+                <br>
+                <div class="form-group">
+                    <button class="btn btn-primary btn-block" type="submit">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</div>
