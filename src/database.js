@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 // curso-mdb
 // mongoose.connect('mongodb://localhost/curso-mdb', {
-mongoose.connect('mongodb+srv://luisdelaossadiaz:1234567890@cluster0.an02m.mongodb.net/?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://tuvocacion:1234567890@cluster0.78njnur.mongodb.net/?retryWrites=true&w=majority', {
     /*
     useCreateIndex: true,
     useNewUrlParser: true,
